@@ -1,0 +1,706 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  cursor: url("assets/mouse.png"), auto !important;
+  font-family: hydrophilia-iced, sans-serif;
+  background-color: gray;
+}
+
+.container {
+  position: absolute; 
+  top: 0; 
+  right: 0; 
+  bottom: 0; 
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: none;
+  padding: 0px;
+}
+
+.title {
+	position: relative;
+	left: 72px;
+	font-size: 40px;
+	z-index: 100;
+	background-color: white;
+	height: 100%;
+	width: 95%;
+	padding: 10px;
+	border: 1px solid black;
+}
+
+.snake {
+	max-width: 73px;
+	position: absolute;
+	z-index: 100;
+	background-color: white;
+	border: 1px solid black;
+}
+
+.snake2 {
+	display: none;
+	max-width: 73px;
+	position: absolute;
+	z-index: 100;
+	background-color: white;
+	border: 1px solid black;
+}
+
+body.darkmode {
+  background-color: #d8d844;
+  font-family: hydrophilia-liquid, sans-serif;
+}
+
+.darkmode .switch-button {
+	right: 0;
+	left: auto;
+}
+
+.darkmode .snake2 {
+	display: block;
+	background-color: #F7F769;
+}
+
+
+.darkmode .title {
+	background-color: #F7F769;
+	font-family: fleisch-wolf, sans-serif;
+	font-size: 47px;
+}
+
+.darkmode h1 {
+	font-family: fleisch-wolf, sans-serif;
+}
+
+.darkmode .snake {
+	background-color: #F7F769;
+}
+
+.darkmode .info {
+	background-color: #F7F769;
+	box-shadow: 11px 11px 0px 0px #BCE8F4;
+}
+
+.darkmode .info2 {
+	background-color: #F7F769;
+	box-shadow: 11px 11px 0px 0px #BCE8F4;
+}
+
+.darkmode .info3 {
+	background-color: #F7F769;
+	box-shadow: 11px 11px 0px 0px #BCE8F4;
+}
+
+.darkmode .info4 {
+	background-color: #F7F769;
+	box-shadow: 11px 11px 0px 0px #BCE8F4;
+}
+
+.darkmode .info5 {
+	background-color: #F7F769;
+	box-shadow: 11px 11px 0px 0px #BCE8F4;
+}
+
+.darkmode .info6 {
+	background-color: #F7F769;
+	box-shadow: 11px 11px 0px 0px #BCE8F4;
+}
+
+.darkmode .info7 {
+	background-color: #F7F769;
+	box-shadow: 11px 11px 0px 0px #BCE8F4;
+}
+
+.darkmode .info8 {
+	background-color: #F7F769;
+	box-shadow: 11px 11px 0px 0px #BCE8F4;
+}
+
+.darkmode .info9 {
+	background-color: #F7F769;
+	box-shadow: 11px 11px 0px 0px #BCE8F4;
+}
+
+.darkmode .pix1 {
+  display: none;
+}
+
+.darkmode .pic1 {
+  display: block;
+}
+
+.darkmode .pix2 {
+  display: none;
+}
+
+.darkmode .pic2 {
+  display: block;
+}
+
+.darkmode .pix3 {
+  display: none;
+}
+
+.darkmode .pic3 {
+  display: block;
+}
+
+.darkmode .pix4 {
+  display: none;
+}
+
+.darkmode .pic4 {
+  display: block;
+}
+
+.darkmode .pix5 {
+  display: none;
+}
+
+.darkmode .pic5 {
+  display: block;
+}
+
+.darkmode .pix6 {
+  display: none;
+}
+
+.darkmode .pic6 {
+  display: block;
+}
+
+.darkmode .pix7 {
+  display: none;
+}
+
+.darkmode .pic7 {
+  display: block;
+}
+
+.darkmode .pix8 {
+  display: none;
+}
+
+.darkmode .pic8 {
+  display: block;
+}
+
+.darkmode .pix9 {
+  display: none;
+}
+
+.darkmode .pic9 {
+  display: block;
+}
+
+
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: none;
+  border: 1px solid black;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: none; 
+  border: 1px solid black;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: none;  
+  cursor: url("assets/mouse2.png"), auto !important;
+}
+
+p {
+  text-decoration: none;
+  line-height: 28px;
+  font-size: 20px;
+  padding: 10px;
+  border: 1px solid black;
+}
+
+h1 {
+	padding: 10px;
+	border: 1px solid black;
+}
+
+h3 {
+	padding: 10px;
+	border: 1px solid black;
+}
+
+.disappear {
+  display: none;
+}
+
+.close1 {
+	width: 15px;
+	position: absolute;
+	top: 10px;
+}
+
+.close2 {
+	width: 15px;
+	position: absolute;
+	top: 10px;
+}
+
+.close3 {
+	width: 15px;
+	position: absolute;
+	top: 10px;
+}
+
+.close4 {
+	width: 15px;
+	position: absolute;
+	top: 10px;
+}
+
+.close5 {
+	width: 15px;
+	position: absolute;
+	top: 10px;
+}
+
+.close6 {
+	width: 15px;
+	position: absolute;
+	top: 10px;
+}
+
+.close7 {
+	width: 15px;
+	position: absolute;
+	top: 10px;
+}
+
+.close8 {
+	width: 15px;
+	position: absolute;
+	top: 10px;
+}
+
+.close9 {
+  width: 15px;
+  position: absolute;
+  top: 10px;
+}
+
+.info {
+  width: 500px;
+  height: 300px;
+  position: fixed;
+  top: 20%;
+  left: 29%;
+  background-color: white;
+  border: 1px solid black;
+  box-shadow: 11px 11px 0px 0px #cccccc;
+  overflow: auto;
+  padding: 20px 20px;
+  cursor: url("assets/mouse2.png"), auto !important;
+}
+
+.info2 {
+  width: 300px;
+  height: 500px;
+  position: fixed;
+  top: 12%;
+  left: 5%;
+  background-color: white;
+  border: 1px solid black;
+  box-shadow: 11px 11px 0px 0px #cccccc;
+  overflow: auto;
+  padding: 20px 20px;
+  cursor: url("assets/mouse2.png"), auto !important;
+}
+
+.info3 {
+  width: 300px;
+  height: 350px;
+  position: fixed;
+  top: 48%;
+  left: 54%;
+  background-color: white;
+  border: 1px solid black;
+  box-shadow: 11px 11px 0px 0px #cccccc;
+  overflow: auto;
+  padding: 20px 20px;
+  cursor: url("assets/mouse2.png"), auto !important;
+}
+
+.info4 {
+  width: 400px;
+  height: 300px;
+  position: fixed;
+  top: 12%;
+  left: 68%;
+  background-color: white;
+  border: 1px solid black;
+  box-shadow: 11px 11px 0px 0px #cccccc;
+  overflow: auto;
+  padding: 20px 20px;
+  cursor: url("assets/mouse2.png"), auto !important;
+}
+
+.info5 {
+  width: 300px;
+  height: 300px;
+  position: fixed;
+  top: 43%;
+  left: 2%;
+  background-color: white;
+  border: 1px solid black;
+  box-shadow: 11px 11px 0px 0px #cccccc;
+  overflow: auto;
+  padding: 20px 20px;
+  cursor: url("assets/mouse2.png"), auto !important;
+}
+
+.info6 {
+  width: 250px;
+  height: 350px;
+  position: fixed;
+  top: 20%;
+  left: 77%;
+  background-color: white;
+  border: 1px solid black;
+  box-shadow: 11px 11px 0px 0px #cccccc;
+  overflow: auto;
+  padding: 20px 20px;
+  cursor: url("assets/mouse2.png"), auto !important;
+}
+
+.info7 {
+  width: 250px;
+  height: 300px;
+  position: fixed;
+  top: 45%;
+  left: 35%;
+  background-color: white;
+  border: 1px solid black;
+  box-shadow: 11px 11px 0px 0px #cccccc;
+  overflow: auto;
+  padding: 20px 20px;
+  cursor: url("assets/mouse2.png"), auto !important;
+}
+
+.info8 {
+  width: 300px;
+  height: 300px;
+  position: fixed;
+  top: 42%;
+  left: 65%;
+  background-color: white;
+  border: 1px solid black;
+  box-shadow: 11px 11px 0px 0px #cccccc;
+  overflow: auto;
+  padding: 20px 20px;
+  cursor: url("assets/mouse2.png"), auto !important;
+}
+
+.info9 {
+  width: 340px;
+  height: 300px;
+  position: fixed;
+  top: 55%;
+  left: 7%;
+  background-color: white;
+  border: 1px solid black;
+  box-shadow: 11px 11px 0px 0px #cccccc;
+  overflow: auto;
+  padding: 20px 20px;
+  cursor: url("assets/mouse2.png"), auto !important;
+}
+
+
+.switch {
+	width: 50px;
+	height: 30px;
+	border: 3px solid black;
+	position: relative;
+}
+
+.switch:hover {
+	cursor: url("assets/mouse2.png"), auto !important;
+}
+
+.switch-button {
+	position: absolute; 
+	top: 0;
+	left: 0;
+	width: 50%;
+	height: 100%;
+	background: black;
+}
+
+.sidebar {
+  position: fixed;
+  top: 3%;
+  width: 10%;
+  height: 750px;
+  right: -70px;
+  z-index: 10000;
+}
+
+.pix1 {
+  width: 440px;
+}
+
+.pix2 {
+  width: 245px;
+}
+
+.pix3 {
+  width: 250px;
+}
+
+.pix4 {
+  width: 350px;
+}
+
+.pix5 {
+  width: 240px;
+}
+
+.pix6 {
+  width: 200px;
+}
+
+.pix7 {
+  width: 200px;
+}
+
+.pix8 {
+  width: 280px;
+}
+
+.pix8 {
+  width: 250px;
+}
+
+.pix9 {
+  width: 290px;
+}
+
+.pic1 {
+  width: 440px;
+  display: none;
+}
+
+.pic2 {
+  width: 245px;
+  display: none;
+}
+
+.pic3 {
+  width: 250px;
+  display: none;
+}
+
+.pic4 {
+  width: 350px;
+  display: none;
+}
+
+.pic5 {
+  width: 240px;
+  display: none;
+}
+
+.pic6 {
+  width: 200px;
+  display: none;
+}
+
+.pic7 {
+  width: 200px;
+  display: none;
+}
+
+.pic8 {
+  width: 280px;
+  display: none;
+}
+
+.pic8 {
+  width: 250px;
+  display: none;
+}
+
+.pic9 {
+  width: 290px;
+  display: none;
+}
+
+@media screen and (max-width: 800px) {
+  .container {
+    height: auto;
+    overflow: scroll;
+  }
+  nav {
+  	z-index: 1000;
+  }
+
+	.title {
+		position: relative;
+		left: 55px;
+		font-size: 28px;
+		z-index: 1000;
+	}
+
+	.snake {
+		width: 57px;
+		position: absolute;
+		z-index: 1000;
+	}
+
+	.snake2 {
+		width: 57px;
+		position: absolute;
+		z-index: 1000;
+	}
+
+  body.darkmode {
+    background-image: url("assets/wavy2.jpg");
+    background-size: cover;
+  }
+
+  .darkmode .title{
+    font-size: 30px;
+  }
+
+  .sidebar {
+    position: relative;
+    left: 0px;
+    top: 70px;
+    width: 100%; 
+    height: 100px;
+    bottom: auto;
+  }
+
+  .info {
+    position: relative; 
+    top: auto;
+    left: auto;
+    width: 70%;
+    height: 500px;
+    margin: 30px;
+    margin-left: auto;
+  	margin-right: auto;
+  }
+
+  .info2 {
+    position: relative; 
+    top: auto;
+    left: auto;
+    width: 70%;
+    height: 500px;
+    margin: 30px;
+    margin-left: auto;
+  	margin-right: auto;
+  }
+
+  .info3 {
+    position: relative; 
+    top: auto;
+    left: auto;
+    width: 70%;
+    height: 500px;
+    margin: 30px;
+    margin-left: auto;
+  	margin-right: auto;
+  }
+
+  .info4 {
+    position: relative; 
+    top: auto;
+    left: auto;
+    width: 70%;
+    height: 500px;
+    margin: 30px;
+    margin-left: auto;
+  	margin-right: auto;
+  }
+  .info5 {
+    position: relative; 
+    top: auto;
+    left: auto;
+    width: 70%;
+    height: 500px;
+    margin: 30px;
+    margin-left: auto;
+  	margin-right: auto;
+  }
+
+  .info6 {
+    position: relative; 
+    top: auto;
+    left: auto;
+    width: 70%;
+    height: 500px;
+    margin: 30px;
+    margin-left: auto;
+  	margin-right: auto;
+  }
+
+  .info7 {
+    position: relative; 
+    top: auto;
+    left: auto;
+    width: 70%;
+    height: 500px;
+    margin: 30px;
+    margin-left: auto;
+  	margin-right: auto;
+  }
+
+  .info8 {
+    position: relative; 
+    top: auto;
+    left: auto;
+    width: 70%;
+    height: 500px;
+    margin: 30px;
+    margin-left: auto;
+  	margin-right: auto;
+  }
+
+  .info9 {
+    position: relative; 
+    top: auto;
+    left: auto;
+    width: 70%;
+    height: 500px;
+    margin: 30px;
+    margin-left: auto;
+  	margin-right: auto;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
